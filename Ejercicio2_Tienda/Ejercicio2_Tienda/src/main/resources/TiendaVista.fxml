@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="653.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerTiendaView">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#88ebe7db" height="262.0" layoutX="18.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="481.0" />
+      <Label layoutX="40.0" layoutY="30.0" text="CODIGO" />
+      <Label layoutX="40.0" layoutY="60.0" text="NOMBRE" />
+      <Label layoutX="40.0" layoutY="90.0" text="MARCA" />
+      <Label layoutX="40.0" layoutY="120.0" text="PRECIO DE VENTA" />
+      <Label layoutX="40.0" layoutY="150.0" text="PRECIO DE COSTO" />
+      <Label layoutX="40.0" layoutY="180.0" text="CANT. STOCK" />
+      <TextField fx:id="lblCodigo" layoutX="240.0" layoutY="30.0" prefHeight="24.0" prefWidth="246.0" promptText="INGRESE EL CODIGO" />
+      <TextField fx:id="lblNom" layoutX="240.0" layoutY="60.0" prefHeight="24.0" prefWidth="246.0" promptText="INGRESE EL NOMBRE" />
+      <TextField fx:id="lblMarc" layoutX="240.0" layoutY="90.0" prefHeight="24.0" prefWidth="246.0" promptText="INGRESE LA MARCA" />
+      <TextField fx:id="lblPVne" layoutX="240.0" layoutY="120.0" prefHeight="24.0" prefWidth="246.0" promptText="INGRESE EL PRECIO DE VENTA" />
+      <TextField fx:id="lblPCos" layoutX="240.0" layoutY="150.0" prefHeight="24.0" prefWidth="246.0" promptText="INGRESE EL PRECIO DE COSTO" />
+      <TextField fx:id="lblCant" layoutX="240.0" layoutY="180.0" prefHeight="24.0" prefWidth="246.0" promptText="INGRESE LA CANTIDAD DE STOCK" />
+      <Button layoutX="33.0" layoutY="246.0" mnemonicParsing="false" onAction="#registrar" text="REGISTRAR" />
+      <ComboBox fx:id="cbOrdenar" layoutX="184.0" layoutY="246.0" prefWidth="150.0" promptText="ORDENAR POR:" />
+      <Button layoutX="347.0" layoutY="246.0" mnemonicParsing="false" onAction="#Ordenar" text="ORDENAR" />
+      <ComboBox fx:id="cbFunciones" layoutX="550.0" layoutY="72.0" prefWidth="150.0" promptText="FUNCIONES" />
+      <Button layoutX="588.0" layoutY="108.0" mnemonicParsing="false" onAction="#Activar" text="ACTIVAR" />
+      <TableView fx:id="tblProductos" layoutX="48.0" layoutY="292.0" prefHeight="262.0" prefWidth="599.0">
+        <columns>
+          <TableColumn fx:id="colCod" prefWidth="85.0" text="CODIGO" />
+          <TableColumn fx:id="colNom" prefWidth="85.0" text="NOMBRE" />
+            <TableColumn fx:id="colMarca" prefWidth="85.0" text="MARCA" />
+            <TableColumn fx:id="colVenta" prefWidth="106.0" text="PREC.VENTA" />
+            <TableColumn fx:id="colCosto" prefWidth="111.0" text="PREC.COSTO" />
+            <TableColumn fx:id="colStock" prefWidth="124.0" text="CANT.STOCK" />
+        </columns>
+      </TableView>
+      <Button layoutX="336.0" layoutY="583.0" mnemonicParsing="false" onAction="#salir" text="SALIR" />
+      <Button fx:id="btnReset" layoutX="596.0" layoutY="146.0" mnemonicParsing="false" onAction="#Reset" text="RESET" visible="false" />
+   </children>
+</AnchorPane>

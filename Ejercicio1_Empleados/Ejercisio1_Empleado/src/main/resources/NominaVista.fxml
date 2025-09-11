@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="319.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NominaController">
+   <children>
+      <Label layoutX="36.0" layoutY="20.0" text="SUELDO BASICO" />
+      <Label layoutX="36.0" layoutY="40.0" text="H.E LABORADAS" />
+      <Label layoutX="36.0" layoutY="60.0" text="VALOR H.E" />
+      <Label layoutX="36.0" layoutY="80.0" text="TOTAL H.E" />
+      <Label layoutX="36.0" layoutY="100.0" text="APORTE SALUD" />
+      <Label layoutX="36.0" layoutY="120.0" text="APORTE PENSION" />
+      <Label layoutX="36.0" layoutY="140.0" text="APORTE ARL" />
+      <Label layoutX="36.0" layoutY="160.0" text="SUBSISIDO TTE" />
+      <Label layoutX="36.0" layoutY="210.0" text="NETO A PAGAR" underline="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="valSB" layoutX="280.0" layoutY="20.0" />
+      <Label fx:id="valHEL" layoutX="280.0" layoutY="40.0" />
+      <Label fx:id="valHEV" layoutX="280.0" layoutY="60.0" />
+      <Label fx:id="valTotalHE" layoutX="280.0" layoutY="80.0" />
+      <Label fx:id="valSalud" layoutX="280.0" layoutY="100.0" />
+      <Label fx:id="valPension" layoutX="280.0" layoutY="120.0" />
+      <Label fx:id="valARL" layoutX="280.0" layoutY="140.0" />
+      <Label fx:id="valSub" layoutX="280.0" layoutY="160.0" />
+      <Label fx:id="valTo" layoutX="280.0" layoutY="210.0" underline="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Button fx:id="salir" layoutX="193.0" layoutY="272.0" mnemonicParsing="false" onAction="#salir" text="SALIR" />
+   </children>
+</AnchorPane>
